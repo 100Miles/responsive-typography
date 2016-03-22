@@ -44,7 +44,7 @@ article header p {
 
 article > p:last-child {
   border-bottom: 1px solid #999;
-  padding-bottom: 1.3rem;
+  padding-bottom: 1.4rem;
 }
 
 blockquote {
@@ -71,23 +71,54 @@ article ol {
   padding: 0;
 }
 
-@media only screen (min-width: 38em) {
+@media only screen and (min-width: 38em) {
 
   article {
-    font-size: 110%
+    font-size: 110%;
+    line-height: 1.6;
+  }
+
+  article p {
+    margin-bottom: 1.6rem;
+  }
+
+  article header {
+    margin-bottom: 1rem;
+  }
+
+  article blockquote {
+    font-size: 120%;
   }
 }
 
-@media only screen (min-width: 60em) {
+@media only screen and (min-width: 60em) {
 
   article {
-    font-size: 120%
+    font-size: 120%;
+    line-height: 2;
+  }
+
+  article p {
+    margin-bottom: 2rem;
+  }
+
+  article header {
+    margin-bottom: 1rem;
+  }
+
+  article blockquote {
+    font-size: 130%;
   }
 }
 
-@media only screen (min-width: 90em) {
+@media only screen and (min-width: 90em) {
 
   article {
-    font-size: 130%
+    font-size: 130%;
   }
+
+  article > p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
 }
